@@ -1,0 +1,314 @@
+[
+  {
+    "viewport": "1919",
+    "hero": {
+      "left": 0,
+      "top": 81,
+      "right": 1919,
+      "bottom": 883.140625,
+      "width": 1919,
+      "height": 802.140625
+    },
+    "hand": {
+      "left": 813.015625,
+      "top": 72.1875,
+      "right": 1636.921875,
+      "bottom": 905.359375,
+      "width": 823.90625,
+      "height": 833.171875
+    },
+    "hex": {
+      "left": 1640.375,
+      "top": 81,
+      "right": 1919,
+      "bottom": 600.765625,
+      "width": 278.625,
+      "height": 519.765625
+    },
+    "leftFlow": {
+      "left": 835.71875,
+      "top": 81,
+      "right": 1185.125,
+      "bottom": 882.140625,
+      "width": 349.40625,
+      "height": 801.140625
+    },
+    "note": {
+      "left": 1480.16796875,
+      "top": 711.5343627929688,
+      "right": 1684.16015625,
+      "bottom": 856.7312622070312,
+      "width": 203.9921875,
+      "height": 145.1968994140625
+    },
+    "text": {
+      "copy": {
+        "left": 143.921875,
+        "top": 225.203125,
+        "right": 743.921875,
+        "bottom": 696.625,
+        "width": 600,
+        "height": 471.421875
+      },
+      "title": {
+        "left": 143.921875,
+        "top": 225.203125,
+        "right": 579.578125,
+        "bottom": 416.546875,
+        "width": 435.65625,
+        "height": 191.34375
+      },
+      "desc": {
+        "left": 143.921875,
+        "top": 466.546875,
+        "right": 643.921875,
+        "bottom": 636.625,
+        "width": 500,
+        "height": 170.078125
+      },
+      "cta": {
+        "left": 338.859375,
+        "top": 666.625,
+        "right": 444.78125,
+        "bottom": 686.625,
+        "width": 105.921875,
+        "height": 20
+      }
+    },
+    "overflow": {
+      "scrollWidth": 1919,
+      "innerWidth": 1919,
+      "hasOverflow": false
+    },
+    "metrics": {
+      "imageRectTop": 72,
+      "imageRectBottom": 905,
+      "domImageWidth": 824,
+      "domImageHeight": 833,
+      "visibleWidth": 737,
+      "visibleLeft": 863,
+      "visibleRight": 1600,
+      "visibleTop": 98,
+      "visibleBottom": 882,
+      "hexLeft": 1640,
+      "handToHexGap": 40,
+      "widthRatio": "0.384",
+      "topGap": 17,
+      "bottomGap": 1
+    },
+    "textOverlap": {
+      "title": false,
+      "desc": false,
+      "cta": false,
+      "copy": false
+    }
+  },
+  {
+    "viewport": "1536",
+    "hero": {
+      "left": 0,
+      "top": 81,
+      "right": 1536,
+      "bottom": 723.046875,
+      "width": 1536,
+      "height": 642.046875
+    },
+    "hand": {
+      "left": 650.9375,
+      "top": 73.953125,
+      "right": 1310.21875,
+      "bottom": 740.640625,
+      "width": 659.28125,
+      "height": 666.6875
+    },
+    "hex": {
+      "left": 1312.984375,
+      "top": 81,
+      "right": 1536,
+      "bottom": 497.015625,
+      "width": 223.015625,
+      "height": 416.015625
+    },
+    "leftFlow": {
+      "left": 668.921875,
+      "top": 81,
+      "right": 948.5,
+      "bottom": 722.046875,
+      "width": 279.578125,
+      "height": 641.046875
+    },
+    "note": {
+      "left": 1183.2841796875,
+      "top": 584.5211791992188,
+      "right": 1348.0595703125,
+      "bottom": 701.8069458007812,
+      "width": 164.775390625,
+      "height": 117.2857666015625
+    },
+    "text": {
+      "copy": {
+        "left": 115.1875,
+        "top": 196.375,
+        "right": 714.21875,
+        "bottom": 654.484375,
+        "width": 599.03125,
+        "height": 458.109375
+      },
+      "title": {
+        "left": 115.1875,
+        "top": 196.375,
+        "right": 520.515625,
+        "bottom": 374.40625,
+        "width": 405.328125,
+        "height": 178.03125
+      },
+      "desc": {
+        "left": 115.1875,
+        "top": 424.40625,
+        "right": 615.1875,
+        "bottom": 594.484375,
+        "width": 500,
+        "height": 170.078125
+      },
+      "cta": {
+        "left": 310.125,
+        "top": 624.484375,
+        "right": 416.046875,
+        "bottom": 644.484375,
+        "width": 105.921875,
+        "height": 20
+      }
+    },
+    "overflow": {
+      "scrollWidth": 1536,
+      "innerWidth": 1536,
+      "hasOverflow": false
+    },
+    "metrics": {
+      "imageRectTop": 74,
+      "imageRectBottom": 741,
+      "domImageWidth": 659,
+      "domImageHeight": 667,
+      "visibleWidth": 589,
+      "visibleLeft": 691,
+      "visibleRight": 1281,
+      "visibleTop": 95,
+      "visibleBottom": 722,
+      "hexLeft": 1313,
+      "handToHexGap": 32,
+      "widthRatio": "0.384",
+      "topGap": 14,
+      "bottomGap": 1
+    },
+    "textOverlap": {
+      "title": false,
+      "desc": false,
+      "cta": false,
+      "copy": true
+    }
+  },
+  {
+    "viewport": "1440",
+    "hero": {
+      "left": 0,
+      "top": 81,
+      "right": 1440,
+      "bottom": 721,
+      "width": 1440,
+      "height": 640
+    },
+    "hand": {
+      "left": 571.171875,
+      "top": 73.984375,
+      "right": 1228.328125,
+      "bottom": 738.53125,
+      "width": 657.15625,
+      "height": 664.546875
+    },
+    "hex": {
+      "left": 1230.921875,
+      "top": 81,
+      "right": 1440,
+      "bottom": 471.015625,
+      "width": 209.078125,
+      "height": 390.015625
+    },
+    "leftFlow": {
+      "left": 627.109375,
+      "top": 81,
+      "right": 905.796875,
+      "bottom": 720,
+      "width": 278.6875,
+      "height": 639
+    },
+    "note": {
+      "left": 1101.2841796875,
+      "top": 582.5524291992188,
+      "right": 1266.0595703125,
+      "bottom": 699.8381958007812,
+      "width": 164.775390625,
+      "height": 117.2857666015625
+    },
+    "text": {
+      "copy": {
+        "left": 108,
+        "top": 196.015625,
+        "right": 669.59375,
+        "bottom": 643,
+        "width": 561.59375,
+        "height": 446.984375
+      },
+      "title": {
+        "left": 108,
+        "top": 196.015625,
+        "right": 488.03125,
+        "bottom": 362.921875,
+        "width": 380.03125,
+        "height": 166.90625
+      },
+      "desc": {
+        "left": 108,
+        "top": 412.921875,
+        "right": 608,
+        "bottom": 583,
+        "width": 500,
+        "height": 170.078125
+      },
+      "cta": {
+        "left": 302.9375,
+        "top": 613,
+        "right": 408.859375,
+        "bottom": 633,
+        "width": 105.921875,
+        "height": 20
+      }
+    },
+    "overflow": {
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "hasOverflow": false
+    },
+    "metrics": {
+      "imageRectTop": 74,
+      "imageRectBottom": 739,
+      "domImageWidth": 657,
+      "domImageHeight": 665,
+      "visibleWidth": 588,
+      "visibleLeft": 611,
+      "visibleRight": 1199,
+      "visibleTop": 95,
+      "visibleBottom": 720,
+      "hexLeft": 1231,
+      "handToHexGap": 32,
+      "widthRatio": "0.408",
+      "topGap": 14,
+      "bottomGap": 1
+    },
+    "textOverlap": {
+      "title": false,
+      "desc": false,
+      "cta": false,
+      "copy": true
+    }
+  }
+]

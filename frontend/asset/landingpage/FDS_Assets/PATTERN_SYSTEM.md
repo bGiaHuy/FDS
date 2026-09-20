@@ -10,6 +10,11 @@
 | Hero | `hero-technical-frame.svg` | Bao quanh vùng minh họa bàn tay, nằm phía sau ảnh | 600–760px | 0.55–0.75 |
 | Hero | `hero-hex-rings.svg` | Góc trên phải, có thể bị crop một phần | 180–260px | 0.45–0.65 |
 | Hero | `technical-corner-lines.svg` | Sau nhãn nhỏ ở rìa phải/trái | 160–240px | 0.35–0.55 |
+| Hero | `hero-blueprint-grid.svg` | Khung kiến trúc tối giản bao quanh minh họa; không có HUD/grid đo lường | 760–980px | 0.30–0.42 |
+| Hero | `hero-signal-rail.svg` | Ray dọc tối giản giữa cột chữ và minh họa | 120–190px | 0.28–0.40 |
+| Hero | `hero-node-orbits.svg` | Cụm lục giác lồng nối với một trục dọc ở mép phải | 220–340px | 0.28–0.38 |
+| Hero | `hero-left-reference-flow.svg` | Tuyến trái bám Navbar, title và club name; ưu tiên khi cần khớp demo | 190–280px × chiều cao Hero | 0.32–0.40 |
+| Hero | `hero-right-reference-route.svg` | Full hex + diamond chồng, rail dọc và nhánh đáy chéo xuống phải theo crop demo | 14.5vw (200–280px) | 0.32–0.40 |
 | About | `about-edge-hex.svg` | Mép trái section, crop khoảng 35–55% | 130–170px | 0.72–0.82 |
 | About | `about-note-connector.svg` | Sau ghi chú viết tay và ảnh | 180–280px | 0.5–0.7 |
 | About | `note-paper.svg` | Nền cho note metadata nhỏ, text overlay bằng HTML | 150–230px | 0.8–1 |
@@ -112,6 +117,9 @@ Không lấy screenshot của các đường này làm ảnh. Dựng bằng bord
 - Không dùng cùng một pattern ba lần trong một section.
 - Không dùng cùng một họ pattern cho tất cả section; phải luân phiên Overlay A/Overlay B trên cùng nền giấy.
 - Không xoay ngẫu nhiên; các cụm đã có hướng tương ứng với reference.
+- Với Hero, `hero-blueprint-grid.svg` là lựa chọn thay thế cho `hero-technical-frame.svg`, không đặt hai frame lớn chồng lên nhau. Chỉ thêm tối đa một trong `hero-signal-rail.svg` hoặc `hero-node-orbits.svg` làm accent thứ cấp.
+- Hero reference không dùng radar, vòng quỹ đạo, đường đo đứt nét, mã kỹ thuật giả hoặc nhãn HUD. Không tự thêm các chi tiết này bằng HTML/CSS.
+- Khi triển khai theo demo cuối, dùng cặp `hero-left-reference-flow.svg` + `hero-right-reference-route.svg` và bỏ ba asset generic `hero-blueprint-grid.svg`, `hero-signal-rail.svg`, `hero-node-orbits.svg` khỏi DOM.
 
 ## 4. Mobile
 

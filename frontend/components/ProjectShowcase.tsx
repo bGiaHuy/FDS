@@ -159,7 +159,7 @@ export default function ProjectShowcase() {
             <p className="text-xs font-normal text-[#415777] italic font-display">
               {current.tagline}
             </p>
-          </div>
+          </div>  
 
           {/* Structured metadata grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-0.5">

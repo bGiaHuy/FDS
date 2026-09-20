@@ -27,153 +27,138 @@ export default function Home() {
         {/* 00 — Hero Section (#home) */}
         <section
           id="home"
-          className="fds-section fds-section--paper fds-hero relative pb-2 sm:pb-3 px-4 sm:px-6 overflow-hidden border-b border-[#E1E8F0]/60"
+          className="fds-section fds-section--paper fds-hero border-b border-[#E1E8F0]/60"
         >
-          {/* Micro-pattern phụ: hero-hex-rings.svg ở góc trên phải, crop 25% (width: 210px, opacity: 0.64) */}
+          {/* Left Reference Flow: clean minimalist flow rail from approved design */}
+          <Image
+            src="/fds/decorations/hero-left-reference-flow.svg"
+            alt=""
+            width={280}
+            height={642}
+            priority
+            className="hero-left-reference-flow"
+            draggable={false}
+            aria-hidden="true"
+          />
+
+          {/* Right Reference Route: authentic traced route & hexagon from approved design */}
+          <Image
+            src="/fds/decorations/hero-right-reference-route.svg"
+            alt=""
+            width={223}
+            height={416}
+            priority
+            className="hero-right-reference-route"
+            draggable={false}
+            aria-hidden="true"
+          />
+
+          {/* Technical label (z-4): FPTU / DATA SCIENCE / CLUB */}
           <div
-            className="hidden sm:block absolute -top-4 -right-8 pointer-events-none opacity-[0.64] z-0 select-none"
+            data-hero-fptu-label
+            className="hero-fptu-label text-[10px] font-mono font-medium text-[#64748B] leading-tight tracking-[0.08em] uppercase select-none pointer-events-none"
             aria-hidden="true"
           >
-            <Image
-              src="/fds/decorations/hero-hex-rings.svg"
-              alt=""
-              width={210}
-              height={180}
-              className="w-[210px] h-auto fds-decorative select-none"
-              draggable={false}
-            />
+            <span className="block">FPTU</span>
+            <span className="block">Data Science</span>
+            <span className="block">Club</span>
           </div>
 
-          {/* Hero container: 1220–1280px, height 580–650px without navbar */}
-          <div className="max-w-[1240px] mx-auto min-h-[540px] lg:min-h-[570px] relative z-10 flex flex-col justify-end">
-            <div className="grid lg:grid-cols-[12fr_13fr] items-end gap-8 lg:gap-10 w-full">
-              {/* Left Column: Hero Text (~48% width, ~540–610px max-width) */}
-              <div
-                data-hero-copy
-                className="relative z-10 w-full max-w-[640px] flex flex-col items-start pb-2 lg:pb-6 lg:-translate-y-4"
+          {/* Technical label (z-4): PEOPLE / DATA / IDEAS / IMPACT */}
+          <div
+            data-hero-impact-label
+            className="hero-impact-label flex-col items-start gap-1.5 pointer-events-none select-none text-[9.5px] font-mono tracking-[0.20em] text-[#64748B] uppercase"
+            aria-hidden="true"
+          >
+            <span>PEOPLE</span>
+            <span>DATA</span>
+            <span>IDEAS</span>
+            <span>IMPACT</span>
+          </div>
+
+          {/* Left Column: Text Content */}
+          <div
+            data-hero-copy
+            className="hero-copy flex flex-col items-start"
+          >
+            {/* Main Heading: Insights in our eyes per TYPOGRAPHY.md */}
+            <h1 className="hero-title fds-hero-title mb-2.5">
+              <span>Insights</span>
+              <em>in our eyes</em>
+            </h1>
+
+            {/* Club Full Name */}
+            <p className="hero-subclub text-xl sm:text-2xl font-display font-semibold text-[#07152F] mb-2 tracking-[-0.018em]">
+              FPTU Data Science Club
+            </p>
+
+            {/* Description from CONTENT_BRIEF.md */}
+            <p className="hero-desc fds-body mb-5 text-[15px] leading-[1.65] text-[#415777] lg:text-[16px]">
+              FPTU Data Science Club (FDS) là câu lạc bộ Khoa học Dữ liệu đầu
+              tiên tại Đại học FPT Hà Nội. Chính thức lên sóng từ ngày 1/11/2020,
+              CLB mong muốn tổ chức các lớp đào tạo, chia sẻ kiến thức, thúc đẩy
+              sinh viên tham gia các cuộc thi liên quan đến DS-AI và tạo không
+              gian kết nối, mái nhà chung cho những ai đam mê khoa học dữ liệu tại
+              Đại học FPT nói riêng và cộng đồng sinh viên Hà Nội nói chung.
+            </p>
+
+            {/* CTA Group */}
+            <div className="flex flex-wrap items-center gap-4 sm:gap-6">
+              <a
+                href="#about"
+                className="inline-flex items-center gap-2 bg-[#07152F] text-white text-sm font-medium px-6 py-2.5 rounded-[3px] hover:bg-[#1E293B] active:bg-[#07152F] transition shadow-xs cursor-pointer"
               >
-                {/* Main Heading: Insights in our eyes per TYPOGRAPHY.md */}
-                <h1 className="fds-hero-title mb-2.5">
-                  <span>Insights</span>
-                  <em>in our eyes</em>
-                </h1>
-
-                {/* Club Full Name */}
-                <p className="text-xl sm:text-2xl font-display font-semibold text-[#07152F] mb-2 tracking-[-0.018em]">
-                  FPTU Data Science Club
-                </p>
-
-                {/* Description from CONTENT_BRIEF.md */}
-                <p className="fds-body mb-5 max-w-[640px] text-[15px] leading-[1.65] text-[#415777] lg:text-[16px]">
-                  FPTU Data Science Club (FDS) là câu lạc bộ Khoa học Dữ liệu đầu
-                  tiên tại Đại học FPT Hà Nội. Chính thức lên sóng từ ngày 1/11/2020,
-                  CLB mong muốn tổ chức các lớp đào tạo, chia sẻ kiến thức, thúc đẩy
-                  sinh viên tham gia các cuộc thi liên quan đến DS-AI và tạo không
-                  gian kết nối, mái nhà chung cho những ai đam mê khoa học dữ liệu tại
-                  Đại học FPT nói riêng và cộng đồng sinh viên Hà Nội nói chung.
-                </p>
-
-                {/* CTA Group */}
-                <div className="flex flex-wrap items-center gap-4 sm:gap-6">
-                  <a
-                    href="#about"
-                    className="inline-flex items-center gap-2 bg-[#07152F] text-white text-sm font-medium px-6 py-2.5 rounded-[3px] hover:bg-[#1E293B] active:bg-[#07152F] transition shadow-xs cursor-pointer"
-                  >
-                    Khám phá FDS
-                    <Image
-                      src="/fds/icons/arrow-right.svg"
-                      alt=""
-                      aria-hidden="true"
-                      width={14}
-                      height={14}
-                      className="brightness-0 invert fds-decorative"
-                      draggable={false}
-                    />
-                  </a>
-                  <a
-                    href="#about"
-                    className="fds-text-link inline-flex items-center gap-1.5 text-sm font-semibold cursor-pointer"
-                  >
-                    Về chúng tôi →
-                  </a>
-                </div>
-              </div>
-
-              {/* Right Column: Hand illustration & Technical Wireframe (~52% width, ~520–590px visual) */}
-              <div
-                data-hero-visual
-                className="relative w-full h-full min-h-[500px] lg:min-h-[550px] flex items-end justify-center lg:justify-end"
+                Khám phá FDS
+                <Image
+                  src="/fds/icons/arrow-right.svg"
+                  alt=""
+                  aria-hidden="true"
+                  width={14}
+                  height={14}
+                  className="brightness-0 invert fds-decorative"
+                  draggable={false}
+                />
+              </a>
+              <a
+                href="#about"
+                className="fds-text-link inline-flex items-center gap-1.5 text-sm font-semibold cursor-pointer"
               >
-                {/* z-1: Technical frame behind hand illustration (opacity: 0.62 per Round 4 spec) */}
-                <div
-                  className="absolute inset-0 flex items-center justify-center pointer-events-none z-[1]"
-                  aria-hidden="true"
-                >
-                  <Image
-                    src="/fds/decorations/hero-technical-frame.svg"
-                    alt=""
-                    width={640}
-                    height={640}
-                    className="w-full max-w-[560px] h-auto opacity-[0.62] fds-decorative"
-                    draggable={false}
-                  />
-                </div>
+                Về chúng tôi →
+              </a>
+            </div>
+          </div>
 
-                {/* z-3: Small technical label floating at top-left of visual column */}
-                <div
-                  className="absolute top-2 left-2 sm:left-4 text-[10.5px] font-mono font-medium text-[#64748B] leading-snug tracking-[0.08em] uppercase select-none pointer-events-none z-[3]"
-                  aria-hidden="true"
-                >
-                  <span className="block">FPTU</span>
-                  <span className="block">Data Science</span>
-                  <span className="block">Club</span>
-                </div>
+          {/* Right Column: Visual illustration + handwritten note */}
+          <div
+            data-hero-visual
+            className="hero-visual"
+          >
+            <Image
+              data-hero-hand
+              src="/fds/hero/hand-network.png"
+              alt=""
+              width={1247}
+              height={1261}
+              priority
+              draggable={false}
+              aria-hidden="true"
+              className="hero-hand fds-decorative select-none object-contain"
+            />
 
-                {/* z-3: Vertical label at far right edge */}
-                <div
-                  data-hero-impact-label
-                  className="hidden xl:flex flex-col items-start gap-1.5 absolute right-[-16px] top-6 border-l border-[#CBD5E1]/60 pl-2.5 text-[10px] font-mono tracking-[0.20em] text-[#64748B] uppercase select-none pointer-events-none z-[3]"
-                  aria-hidden="true"
-                >
-                  <span>PEOPLE</span>
-                  <span>DATA</span>
-                  <span>IDEAS</span>
-                  <span>IMPACT</span>
-                </div>
-
-                {/* z-2: Hand illustration sitting directly on paper, touching bottom */}
-                <div
-                  data-hero-hand
-                  className="relative w-full max-w-[530px] z-[2] flex justify-center lg:justify-start lg:pr-14 lg:-ml-6 items-end"
-                >
-                  <Image
-                    src="/fds/hero/hand-network.png"
-                    alt=""
-                    width={640}
-                    height={647}
-                    priority
-                    draggable={false}
-                    aria-hidden="true"
-                    className="fds-decorative w-full h-auto object-contain max-h-[530px] object-bottom select-none"
-                  />
-                </div>
-
-                {/* z-4: Handwritten Note SVG at bottom right of illustration, clearly legible */}
-                <div
-                  data-hero-note
-                  className="absolute right-0 sm:right-2 bottom-4 sm:bottom-6 pointer-events-none rotate-[-6deg] z-[4]"
-                  aria-hidden="true"
-                >
-                  <Image
-                    src="/fds/lettering/hero-note.svg"
-                    alt=""
-                    width={190}
-                    height={90}
-                    className="w-38 sm:w-44 h-auto fds-decorative select-none"
-                    draggable={false}
-                  />
-                </div>
-              </div>
+            {/* Handwritten Note SVG */}
+            <div
+              data-hero-note
+              className="hero-note pointer-events-none"
+              aria-hidden="true"
+            >
+              <Image
+                src="/fds/lettering/hero-note.svg"
+                alt=""
+                width={170}
+                height={80}
+                className="w-full h-auto fds-decorative select-none"
+                draggable={false}
+              />
             </div>
           </div>
         </section>

@@ -66,13 +66,13 @@ export default function Navbar() {
         {/* Brand Logo */}
         <Link href="#home" className="flex items-center gap-2 flex-shrink-0" aria-label="FDS - Về đầu trang">
           <Image
-            src="/fds/brand/fds-wordmark-authentic-navy.png"
+            src="/fds/brand/fds-wordmark-authentic-navy-tight.png"
             alt="FDS - FPTU Data Science Club"
-            width={154}
-            height={84}
+            width={124}
+            height={46}
             priority
             draggable={false}
-            className="w-[138px] md:w-[154px] h-auto object-contain select-none fds-decorative"
+            className="w-[118px] md:w-[124px] h-auto object-contain select-none fds-decorative"
           />
         </Link>
 

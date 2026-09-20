@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 250" fill="none">
+  <!-- Approved-reference geometry: nested hexagons connected to one vertical rail. -->
+  <g stroke="#AFC7E6" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M70 38h76l38 66-38 66H70l-38-66z"/>
+    <path d="M91 70h36l18 34-18 34H91l-19-34z"/>
+    <path d="M146 38h70l36 62"/>
+    <path d="M184 104h84v138"/>
+    <path d="M268 194h72"/>
+  </g>
+  <g fill="#82A8D8">
+    <circle cx="184" cy="104" r="3"/>
+    <circle cx="268" cy="194" r="3"/>
+  </g>
+</svg>
