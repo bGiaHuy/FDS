@@ -89,14 +89,14 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Navigation Links */}
-        <nav className="hidden md:flex items-center gap-6 lg:gap-8" aria-label="Điều hướng chính">
+        <nav className="hidden lg:flex items-center gap-4 xl:gap-7" aria-label="Điều hướng chính">
           {navLinks.map((link) => {
             const isActive = activeSection === link.id;
             return (
               <a
                 key={link.id}
                 href={link.href}
-                className={`text-sm font-medium transition-colors relative py-1 ${
+                className={`text-sm font-medium transition-colors relative py-1 whitespace-nowrap ${
                   isActive
                     ? "text-[#2457A6] font-semibold"
                     : "text-[#07152F] hover:text-[#2457A6]"
@@ -115,16 +115,16 @@ export default function Navbar() {
         </nav>
 
         {/* Right Actions: Search, Join CTA & Auth */}
-        <div className="hidden md:flex items-center gap-3">
+        <div className="hidden lg:flex items-center gap-3">
           {!user && (
             <>
               <a
                 href="#journey"
-                className="inline-flex items-center gap-1.5 bg-[#EFF6FF] text-[#2457A6] text-sm font-medium px-4 py-2 rounded-[3px] hover:bg-[#E1E8F0] transition-all"
+                className="hidden xl:inline-flex items-center gap-1.5 bg-[#EFF6FF] text-[#2457A6] text-sm font-medium px-4 py-2 rounded-[3px] hover:bg-[#E1E8F0] transition-all whitespace-nowrap"
               >
                 Tham gia FDS
               </a>
-              <div className="w-[1px] h-5 bg-[#E1E8F0] mx-1"></div>
+              <div className="hidden xl:block w-[1px] h-5 bg-[#E1E8F0] mx-1"></div>
             </>
           )}
 
@@ -157,13 +157,13 @@ export default function Navbar() {
             <>
               <Link
                 href="/auth"
-                className="inline-flex items-center text-sm font-medium text-[#07152F] hover:text-[#2457A6] px-2 py-2 transition"
+                className="inline-flex items-center text-sm font-medium text-[#07152F] hover:text-[#2457A6] px-2 py-2 transition whitespace-nowrap"
               >
                 Sign in
               </Link>
               <Link
                 href="/auth?mode=register"
-                className="inline-flex items-center bg-[#07152F] text-white text-sm font-medium px-4 py-2.5 rounded-[3px] hover:bg-[#1E293B] active:bg-[#07152F] transition-all shadow-xs"
+                className="inline-flex items-center bg-[#07152F] text-white text-sm font-medium px-4 py-2.5 rounded-[3px] hover:bg-[#1E293B] active:bg-[#07152F] transition-all shadow-xs whitespace-nowrap"
               >
                 Sign up
               </Link>
@@ -172,7 +172,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Hamburger & Search Button */}
-        <div className="flex md:hidden items-center gap-2">
+        <div className="flex lg:hidden items-center gap-2">
           <button
             type="button"
             onClick={() => setSearchOpen(true)}

@@ -130,18 +130,33 @@ textarea {
 }
 
 .fds-navbar-inner {
-  width: min(100% - 32px, 1200px);
+  width: 100%;
   min-height: 80px;
-  margin-inline: auto;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 1280px) {
+  .fds-navbar-inner {
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .fds-navbar-inner {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media (max-width: 767px) {
   .fds-navbar-inner {
     min-height: 74px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -257,12 +272,9 @@ textarea {
 
 @media (max-width: 1279px) {
   .hero-left-reference-flow,
-  .hero-impact-label {
-    display: none;
-  }
-
+  .hero-impact-label,
   .hero-fptu-label {
-    margin-bottom: 12px;
+    display: none;
   }
 }
 
