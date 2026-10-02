@@ -7,6 +7,8 @@
     "dev:frontend": "npm --prefix frontend run dev",
     "dev:admin": "npm --prefix admin run dev",
     "dev:backend": "npm --prefix backend run start:dev",
+    "start:dev": "npm --prefix backend run start:dev",
+    "dev": "npm run dev:frontend",
     "db:up": "docker compose up -d postgres",
     "db:down": "docker compose down",
     "docker:up": "docker compose up --build",
