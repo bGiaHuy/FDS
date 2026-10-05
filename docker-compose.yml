@@ -37,6 +37,10 @@ services:
         condition: service_healthy
     environment:
       NODE_ENV: production
+      FDS_ENABLE_REVIEW: ${FDS_ENABLE_REVIEW:-0}
+      FDS_REVIEW_DIRECTORY: /app/review-data
+      FDS_REVIEW_TOKEN: ${FDS_REVIEW_TOKEN:-}
+      FDS_REVIEW_SITE_ORIGIN: ${FDS_REVIEW_SITE_ORIGIN:-http://localhost:3000}
       # URL backend cho browser (client-side) — phải là localhost
       NEXT_PUBLIC_API_URL: http://localhost:4000
       # URL backend nội bộ cho SSR (server-side) trong container
@@ -47,11 +51,14 @@ services:
       NEXTAUTH_SECRET: fds_nextauth_secret_change_me_in_prod
     ports:
       - "3000:3000"
+    volumes:
+      - fds_reviews:/app/review-data
     healthcheck:
       test: ["CMD-SHELL", "wget -qO- http://localhost:3000 || exit 1"]
       interval: 15s
       timeout: 5s
       retries: 5
+
       start_period: 30s
 
   admin:
@@ -66,3 +73,6 @@ services:
       VITE_API_URL: http://localhost:4000
     ports:
       - "5173:80"
+
+volumes:
+  fds_reviews:

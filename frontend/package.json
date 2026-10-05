@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "members:catalog": "node scripts/sync-member-catalog.mjs",
+    "members:check": "node scripts/sync-member-catalog.mjs --check"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.3.1",

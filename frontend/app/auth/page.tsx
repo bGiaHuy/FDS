@@ -7,6 +7,11 @@ import Link from "next/link";
 import { Eye, EyeOff, Mail, Lock, User, ArrowRight, ChevronRight } from "lucide-react";
 import { login, register, getAccessToken, getStoredUser, clearAuth } from "../../lib/auth";
 
+function nextPage() {
+  const next = new URLSearchParams(window.location.search).get("next");
+  return next === "/account/profile" || next === "/account/members" ? next : "/";
+}
+
 type Mode = "login" | "register" | "forgot";
 
 export default function AuthPage() {
@@ -51,12 +56,13 @@ export default function AuthPage() {
         localStorage.setItem("accessToken", accessToken);
         localStorage.setItem("user", JSON.stringify(userData));
         // Clean up URL
-        window.history.replaceState(null, "", "/auth");
+        const destination = nextPage();
+        window.history.replaceState(null, "", `/auth?next=${encodeURIComponent(destination)}`);
         // Redirect based on role
-        if (userData.role === "ADMIN") {
+        if (userData.role === "ADMIN" && nextPage() === "/") {
           window.location.href = `http://localhost:5173/#token=${accessToken}`;
         } else {
-          router.replace("/");
+          router.replace(nextPage());
         }
         return;
       } catch {
@@ -67,10 +73,10 @@ export default function AuthPage() {
     const token = getAccessToken();
     const user = getStoredUser();
     if (token && user) {
-      if (user.role === "ADMIN") {
+      if (user.role === "ADMIN" && nextPage() === "/") {
         window.location.href = `http://localhost:5173/#token=${token}&refresh=${localStorage.getItem("refreshToken") ?? ""}`;
       } else {
-        router.replace("/");
+        router.replace(nextPage());
       }
     }
   }, [router]);
@@ -89,17 +95,17 @@ export default function AuthPage() {
     try {
       if (mode === "login") {
         const res = await login(email, password);
-        if (res.user.role === "ADMIN") {
+        if (res.user.role === "ADMIN" && nextPage() === "/") {
           window.location.href = `http://localhost:5173/#token=${res.accessToken}`;
         } else {
-          router.push("/");
+          router.push(nextPage());
         }
       } else if (mode === "register") {
         const res = await register(name, email, password);
-        if (res.user.role === "ADMIN") {
+        if (res.user.role === "ADMIN" && nextPage() === "/") {
           window.location.href = `http://localhost:5173/#token=${res.accessToken}`;
         } else {
-          router.push("/");
+          router.push(nextPage());
         }
       } else {
         // forgot password — chưa có API

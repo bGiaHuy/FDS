@@ -43,6 +43,10 @@ docker-compose.override.yml
 tmp/
 temp/
 scratch/
+FDS_Codex_Redesign_Pack_v1/
+# Local original photo archive; publish only curated web images and its catalog.
+/frontend/asset/photos/fds/
+/downloaded_albums/
 
 # OS / editor
 .DS_Store

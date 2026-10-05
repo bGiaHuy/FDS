@@ -1,0 +1,10 @@
+ALTER TABLE public."user"
+  ADD COLUMN "profile_member_id" VARCHAR(120),
+  ADD COLUMN "bio" VARCHAR(1200) NOT NULL DEFAULT '',
+  ADD COLUMN "major" VARCHAR(120) NOT NULL DEFAULT '',
+  ADD COLUMN "cohort" VARCHAR(120) NOT NULL DEFAULT '',
+  ADD COLUMN "skills" TEXT[] NOT NULL DEFAULT ARRAY[]::TEXT[],
+  ADD COLUMN "website" VARCHAR(500) NOT NULL DEFAULT '',
+  ADD COLUMN "github" VARCHAR(500) NOT NULL DEFAULT '',
+  ADD COLUMN "linkedin" VARCHAR(500) NOT NULL DEFAULT '';
+CREATE UNIQUE INDEX "user_profile_member_id_key" ON public."user"("profile_member_id");

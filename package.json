@@ -12,6 +12,8 @@
     "db:up": "npm --prefix backend run prisma:deploy",
     "db:down": "docker compose down",
     "docker:up": "npm run db:up && docker compose up --build",
-    "docker:down": "docker compose down"
+    "docker:down": "docker compose down",
+    "reviews:sync": "node frontend/scripts/sync-reviews.mjs",
+    "reviews:watch": "node frontend/scripts/sync-reviews.mjs --watch"
   }
 }
