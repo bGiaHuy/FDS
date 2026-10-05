@@ -1,3 +1,4 @@
+import { MembersModule } from './members/members.module';
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { ClubController } from './club.controller';
@@ -7,7 +8,7 @@ import { PrismaService } from './prisma.service';
 import { AuthModule } from './auth/auth.module';
 
 @Module({
-  imports: [ConfigModule.forRoot({ isGlobal: true }), AuthModule],
+  imports: [ConfigModule.forRoot({ isGlobal: true }), AuthModule, MembersModule],
   controllers: [ClubController, ContactController],
   providers: [ClubService, PrismaService],
 })

@@ -1,0 +1,142 @@
+.people-intro > .ed-link { display: inline-block; margin-bottom: 55px; }
+.people-golden { border-top: 1px solid var(--ed-line); }
+.people-saved-posts { border-top: 1px solid var(--ed-line); }
+.people-saved-excerpt { margin-top: 20px; }
+.people-saved-excerpt summary { cursor: pointer; font-size: 14px; }
+.people-saved-excerpt blockquote { margin: 20px 0 0; white-space: pre-line; overflow-wrap: anywhere; font-size: 15px; line-height: 1.8; }
+.ed-people-page .ed-heading { display: block; }
+.ed-people-page .ed-heading > p { max-width: 65ch; margin-top: 24px; }
+.people-story-feature > div { min-width: 0; }
+.people-nam-achievements { min-width: 0; overflow-wrap: anywhere; }
+.people-nam-achievements blockquote { width: auto; max-width: 100%; }
+.people-nam-full-achievements { margin-top: 36px; border-block: 1px solid var(--ed-line); padding-block: 24px; }
+.people-nam-full-achievements summary { font-size: 18px; }
+.people-nam-full-achievements blockquote { max-width: 80ch; margin-inline: auto; padding-block: 12px 24px; }
+.people-story-feature .ed-link { display: block; width: fit-content; margin-top: 16px; }
+.people-golden-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 30px; }
+.people-golden-story { scroll-margin-top: 110px; }
+.people-golden-art { position: relative; aspect-ratio: 1; }
+.people-golden-art img { object-fit: contain; }
+.people-golden-story .ed-label { margin-block: 24px 12px; }
+.people-golden-story h3 { font-size: clamp(26px,2.5vw,36px); }
+.people-golden-role { margin-block: 14px 20px; font-size: 13px !important; }
+.people-golden-story .ed-link { display: inline-block; margin-top: 22px; }
+@media(max-width:700px) { .people-golden-grid { grid-template-columns: 1fr; gap: 48px; } }
+.people-alumni,.people-scholarship { border-top: 1px solid var(--ed-line); }
+.people-alumni-grid { display: grid; gap: 55px; }
+.people-alumni-story { display: grid; grid-template-columns: minmax(0,320px) minmax(0,1fr); gap: 55px; align-items: center; scroll-margin-top: 110px; }
+.people-alumni-story h3 { font-size: clamp(32px,4vw,52px); margin-top: 16px; }
+.people-alumni-story p:not(.ed-label) { margin-block: 20px; }
+.people-alumni-title { font-family: var(--font-display); font-size: 25px; }
+.people-alumni-art { position: relative; aspect-ratio: 1; max-width: 320px; }
+.people-alumni-story:nth-child(2) .people-alumni-art { aspect-ratio: 952/960; }
+.people-alumni-art img { object-fit: contain; }
+.people-scholarship h2 { margin-block: 20px 28px; }
+.people-scholarship > p:not(.ed-label) { max-width: 760px; margin-bottom: 22px; }
+@media (max-width: 700px) { .people-alumni-story { grid-template-columns: 1fr; gap: 28px; }.people-alumni-art { width: 100%; margin-inline: auto; } }
+.people-profiles { border-top: 1px solid var(--ed-line); }
+.people-profiles-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 30px; }
+.people-profile { scroll-margin-top: 110px; }
+.people-profile-art { position: relative; aspect-ratio: 1; background: #941c2b; }
+.people-profile-art img { object-fit: contain; }
+.people-profile .ed-label { margin-block: 24px 12px; }
+.people-profile h3 { font-size: clamp(25px,2.5vw,36px); }
+.people-profile-gpa { margin-block: 14px; font-family: var(--font-mono); font-size: 13px; }
+.people-profile-gpa strong { font-size: 24px; }
+.people-profile > .ed-link { display: inline-block; margin-top: 22px; }
+.people-academic-notes { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; border-top: 1px solid var(--ed-line); margin-top: 65px; padding-top: 38px; }
+.people-academic-notes h3 { margin-block: 16px 22px; }
+.people-academic-notes .ed-link { display: inline-block; margin-top: 22px; }
+@media (max-width: 700px) { .people-profiles-grid,.people-academic-notes { grid-template-columns: 1fr; gap: 45px; } }
+.people-stories { border-top: 1px solid var(--ed-line); }
+.people-story-feature { display: grid; grid-template-columns: 1fr 1.15fr; gap: 65px; align-items: center; margin-top: 32px; scroll-margin-top: 100px; }
+.people-story-feature h2 { font-size: clamp(36px,4vw,58px); }
+.people-story-feature p:not(.ed-label) { margin-block: 22px; }
+.people-story-portrait { position: relative; aspect-ratio: 3/4; background: #102746; }
+.people-story-portrait img { object-fit: contain; }
+.people-story-pair { display: grid; grid-template-columns: 1.2fr 1fr; gap: 65px; margin-top: 75px; }
+.people-story-pair article { scroll-margin-top: 100px; }
+.people-story-pair h3 { margin-bottom: 24px; }
+.people-story-pair figure { margin-block: 30px 22px; }
+.people-story-pair .ed-photo { aspect-ratio: 4/3; }
+.people-story-pair #mid-autumn .ed-photo { aspect-ratio: 2048/1365; }
+.people-story-pair #mid-autumn .ed-photo img { object-fit: contain; }
+.people-story-pair > article:last-child { border-block: 1px solid var(--ed-line); padding-block: 35px; align-self: center; }
+.people-story-note { margin-block: 28px; }
+@media (max-width: 700px) { .people-story-feature,.people-story-pair { grid-template-columns: 1fr; gap: 32px; }.people-story-pair { margin-top: 48px; } }
+.people-intro-copy { display: grid; grid-template-columns: 1.3fr 1fr; align-items: end; gap: 60px; margin-bottom: 48px; }
+.people-intro-copy h1 { font-size: clamp(48px, 6.5vw, 94px); }
+.people-intro-copy > div > .ed-link { display: inline-block; margin-top: 24px; }
+.people-cover { display: grid; grid-template-columns: 1.2fr 1fr; gap: 26px; align-items: end; }
+.people-cover .ed-photo { aspect-ratio: 5/4; }
+.people-cover figure:last-child { padding-top: 70px; }
+.people-cover figure:last-child .ed-photo { aspect-ratio: 1; }
+.ed-people-page figcaption { font-family: var(--font-mono); font-size: 11px; line-height: 1.6; margin-top: 12px; color: #50617a; }
+.people-members,.people-moments { border-top: 1px solid var(--ed-line); }
+.people-filters { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 35px; }
+.people-filters button { background: transparent; border: 1px solid #0a234840; padding: 12px 18px; color: #0a2348; font: inherit; font-size: 13px; cursor: pointer; }
+.people-filters button[aria-pressed="true"] { background: #0a2348; color: white; }
+.people-filters button:focus-visible { outline: 3px solid #286acf; outline-offset: 4px; }
+.people-count { font-size: 12px; margin-block: 20px 28px; }
+.people-generations span { margin-left: 8px; opacity: .7; font-size: 11px; }
+.people-member-controls { display: flex; flex-wrap: wrap; gap: 24px; align-items: end; margin-top: 22px; }
+.people-member-controls .people-filters { margin-top: 0; flex: 1; }
+.people-member-search { display: grid; gap: 8px; font-size: 12px; min-width: min(280px,100%); }
+.people-member-search input { width: 100%; border: 1px solid #0a234840; padding: 13px 14px; background: transparent; color: #0a2348; font: inherit; font-size: 14px; }
+.people-member-search input:focus-visible { outline: 3px solid #286acf; outline-offset: 3px; }
+.people-generation-note { margin-bottom: 28px; max-width: 650px; }
+.people-rosters { margin-bottom: 35px; }
+.people-rosters summary { cursor: pointer; font-size: 14px; }
+.people-rosters > div { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(280px,100%),1fr)); gap: 25px; margin-top: 25px; }
+.people-rosters figcaption { margin-top: 12px; font-size: 13px; }
+.people-members .people-portrait { aspect-ratio: 1; background: transparent; }
+.people-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 48px 28px; }
+.people-member { scroll-margin-top: 110px; }
+.people-portrait { position: relative; aspect-ratio: 3/4; background: #102746; }
+.people-portrait img { object-fit: contain; }
+.people-member .ed-label { margin-block: 20px 8px; }
+.people-member h3 { font-size: clamp(24px, 2.4vw, 34px); margin-bottom: 8px; }
+.people-member > p:last-child { font-size: 13px; }
+.people-members > .ed-content-note { margin-top: 40px; }
+.people-inside-leader { border-top: 1px solid var(--ed-line); }
+.people-inside-leader > h2 { font-size: clamp(26px, 3vw, 42px); line-height: 1.25; margin-block: 20px 40px; }
+.people-leader-article { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+.people-leader-images { display: grid; gap: 24px; }
+.people-leader-images img { display: block; width: 100%; height: auto; }
+.people-leader-original p { margin-bottom: 24px; line-height: 1.85; }
+@media (max-width: 700px) { .people-leader-article { grid-template-columns: 1fr; gap: 32px; } }
+.people-leadership { margin-block: 32px 64px; padding: 32px; background: #e8edf2; border-top: 3px solid #0a2348; }
+.people-leadership > .ed-label { margin-bottom: 24px; }
+.people-department-columns { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; }
+.people-department-title { font-size: 28px; padding-bottom: 18px; border-bottom: 1px solid var(--ed-line); margin-bottom: 28px; }
+.people-department-list { display: grid; gap: 36px; }
+@media (max-width: 700px) {
+  .people-leadership { padding: 20px; }
+  .people-department-columns { grid-template-columns: 1fr; gap: 56px; }
+}
+.people-moments-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px 28px; }
+.people-moments-grid .ed-photo { aspect-ratio: 1; }
+.people-moments-grid figure:nth-child(even) { margin-top: 70px; }
+.people-footer { padding-block: 70px 100px; border-top: 1px solid var(--ed-line); }
+.people-footer h2 { margin-bottom: 30px; }
+.people-footer .ed-link { display: inline-block; margin-right: 30px; margin-bottom: 15px; }
+@media (max-width: 1000px) { .people-intro-copy { gap: 30px; }.people-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media (max-width: 600px) { .people-intro-copy,.people-cover,.people-moments-grid { grid-template-columns: 1fr; gap: 28px; }.people-cover figure:last-child { padding-top: 0; }.people-grid { grid-template-columns: 1fr; gap: 36px; }.people-moments-grid figure:nth-child(even) { margin-top: 0; }.people-intro > .ed-link { margin-bottom: 35px; }.people-filters button { font-size: 12px; padding: 10px 12px; } }
+
+.people-member-open { width:100%; text-align:left; color:inherit; background:none; border:0; padding:0; cursor:pointer; }
+.people-member-open:focus-visible { outline:2px solid #2457a6; outline-offset:8px; }
+.people-member-more { display:block; margin-top:12px; color:#2457a6; font-size:13px; text-decoration:underline; text-underline-offset:4px; }
+.member-dialog { width:min(920px, calc(100vw - 32px)); max-height:calc(100dvh - 32px); margin:auto; padding:40px; border:1px solid #cbd5e1; background:#f5f7fb; color:#07152f; overflow:auto; }
+.member-dialog::backdrop { background:rgba(7,21,47,.65); }
+.member-dialog-close { position:absolute; top:8px; right:14px; font-size:28px; padding:0 8px; cursor:pointer; }
+.member-detail-layout { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.2fr); gap:32px; }
+.member-detail-photo img { display:block; width:100%; height:auto; max-height:65vh; object-fit:contain; }
+.member-dialog h2 { font-family:var(--font-display); font-size:38px; line-height:1.1; margin:18px 0 10px; }
+.member-detail-role { color:#2457a6; margin-bottom:24px; }
+.member-detail-bio { white-space:pre-wrap; overflow-wrap:anywhere; line-height:1.7; margin:20px 0; }
+.member-detail-facts div { margin-top:16px; }.member-detail-facts dt { font-size:12px; color:#415777; }.member-detail-facts dd { margin-top:4px; overflow-wrap:anywhere; }
+.member-detail-links { display:flex; flex-wrap:wrap; gap:16px; margin:24px 0; }.member-detail-links a,.member-detail-status button { color:#2457a6; text-decoration:underline; }
+.member-detail-status { font-size:13px; margin:24px 0; }.member-detail-status button { cursor:pointer; }
+@media(max-width:600px) { .member-dialog { padding:40px 20px 24px; }.member-detail-layout { grid-template-columns:1fr; gap:20px; }.member-detail-photo img { max-height:42vh; }.member-dialog h2 { font-size:30px; } }
+
+body:has(.member-dialog[open]) { overflow:hidden; }

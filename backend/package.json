@@ -10,7 +10,8 @@
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev --name init",
     "prisma:deploy": "prisma migrate deploy",
-    "prisma:seed": "prisma db seed"
+    "prisma:seed": "prisma db seed",
+    "test:profiles": "npm run build && node test/member-profiles.cjs"
   },
   "dependencies": {
     "@nestjs/common": "^12.0.3",

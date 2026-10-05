@@ -34,9 +34,9 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
   if (!isOpen) return null;
 
   const quickLinks = [
-    { title: "Lĩnh vực hoạt động", desc: "Data Science, AI, Data Engineering, Research", href: "#fields" },
+    { title: "Lĩnh vực hoạt động", desc: "Data Science, Big Data, AI, Học tập & Thực hành", href: "#fields" },
     { title: "Dự án tiêu biểu", desc: "Các chương trình và sản phẩm dữ liệu của CLB", href: "#projects" },
-    { title: "Hoạt động & Sự kiện", desc: "Workshop, hackathon, study groups", href: "#activities" },
+    { title: "Hoạt động & Sự kiện", desc: "Workshop, training, Club Fair, FDS Prom", href: "#activities" },
     { title: "Tuyển thành viên FDS", desc: "4 bước tham gia cộng đồng", href: "#journey" },
     { title: "Về FDS", desc: "Tầm nhìn và giá trị cốt lõi", href: "#about" },
   ];

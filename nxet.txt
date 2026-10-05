@@ -1,0 +1,6 @@
+-điểm tốt trang đầu tiên visual ok, đẹp, điểm tốt duy nhất
+-cải thiện, anh muốn có lướt từ trên xuống phải chuyển cảnh mượt, bố cục composition bớt borig, các container bị lặp lại, ko có điểm  nhấn
+đổi font title
+idiea nắm quả cầu, rồi có các tia sáng he ra
+dãn các component ra theo chiều dọc(dãn các container ra), một frame ko nên có 2 nội dung cùng xuất hiệng
+

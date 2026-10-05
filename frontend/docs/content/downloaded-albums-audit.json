@@ -1,0 +1,340 @@
+{
+  "date": "2026-10-05",
+  "readablePhotos": 2671,
+  "unreadableFiles": [
+    "FDS_-_Trung_Thu_202350_mc/image_42.jpg"
+  ],
+  "publishedPhotos": 19,
+  "albums": [
+    {
+      "album": "10_mc",
+      "readablePhotos": 12,
+      "largePhotos": 2,
+      "maximumSavedTextLength": 204
+    },
+    {
+      "album": "CAPSTONE_PROJECT_55_mc",
+      "readablePhotos": 57,
+      "largePhotos": 19,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "CHIPMUNKS_-_FDS_RECRUITMENT_GEN_525_mc",
+      "readablePhotos": 27,
+      "largePhotos": 2,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "Cover_photos30_items",
+      "readablePhotos": 1,
+      "largePhotos": 1,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "Cuc_ua_S_2019_-_202025_mc",
+      "readablePhotos": 27,
+      "largePhotos": 2,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "Cuc_ua_S_2019_-_2020_Update202_mc",
+      "readablePhotos": 204,
+      "largePhotos": 2,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "DANH_SCH_THNH_VIN_FDS_GEN_6_-_202438_mc",
+      "readablePhotos": 40,
+      "largePhotos": 1,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "Danh_sch_thnh_vin_Gen_202130_mc",
+      "readablePhotos": 32,
+      "largePhotos": 2,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "DANH_SCH_THNH_VIN_GEN_4_-_202235_mc",
+      "readablePhotos": 37,
+      "largePhotos": 2,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "DANH_SCH_THNH_VIN_GEN_7_-_202543_mc",
+      "readablePhotos": 45,
+      "largePhotos": 44,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "DATALYMPIA_-_L_Chuyn_Giao_Ban_Ch_Nhim_Gen_580_mc",
+      "readablePhotos": 82,
+      "largePhotos": 35,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "EPIC_W_-_L_Chuyn_Giao_Ban_Ch_Nhim_Gen_669_mc",
+      "readablePhotos": 71,
+      "largePhotos": 34,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "FDS_-_FPT_Edu_Digital_Race_20239_mc",
+      "readablePhotos": 11,
+      "largePhotos": 10,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "FDS_-_JUNCTIONX_HANOI_202312_mc",
+      "readablePhotos": 14,
+      "largePhotos": 13,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "FDS_-_Trung_Thu_202350_mc",
+      "readablePhotos": 51,
+      "largePhotos": 27,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "FDS_CLUB_DAY_202380_mc",
+      "readablePhotos": 82,
+      "largePhotos": 40,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "FDS_Experiences_Data_Science_i_mun_ni125_mc",
+      "readablePhotos": 127,
+      "largePhotos": 40,
+      "maximumSavedTextLength": 219
+    },
+    {
+      "album": "FDS_Gen_531_mc",
+      "readablePhotos": 33,
+      "largePhotos": 2,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "FDS_PROM_2025_JESO_REE12_mc",
+      "readablePhotos": 14,
+      "largePhotos": 13,
+      "maximumSavedTextLength": 224
+    },
+    {
+      "album": "FDS_PROM_2025_RECAP67_mc",
+      "readablePhotos": 69,
+      "largePhotos": 52,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "FDS_Prom_2026_PawnRise135_mc",
+      "readablePhotos": 134,
+      "largePhotos": 102,
+      "maximumSavedTextLength": 225
+    },
+    {
+      "album": "FDS_RECRUITMENT_2025_PIONEER_CITY21_mc",
+      "readablePhotos": 23,
+      "largePhotos": 1,
+      "maximumSavedTextLength": 200
+    },
+    {
+      "album": "FDS_RECRUITMENT_GEN_6_RECAP_VNG_PHNG_VN79_mc",
+      "readablePhotos": 81,
+      "largePhotos": 55,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "FDS_RECRUITMENT_GEN_6_TRUYN_THNG_OFFLINE63_mc",
+      "readablePhotos": 65,
+      "largePhotos": 22,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "FDS_RECRUITMENT_GEN_7_FIRST_MEETING49_mc",
+      "readablePhotos": 51,
+      "largePhotos": 10,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "FDS_RECRUITMENT_GEN_7_TRUYN_THNG_OFFLINE55_mc",
+      "readablePhotos": 57,
+      "largePhotos": 43,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "FDS_RECRUITMENT_GEN_7_VNG_PHNG_VN80_mc",
+      "readablePhotos": 82,
+      "largePhotos": 51,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "FDS_Seminar_LIMITLESS_POTENTIAL_OF_DATA_SCIENCE41_mc",
+      "readablePhotos": 43,
+      "largePhotos": 13,
+      "maximumSavedTextLength": 210
+    },
+    {
+      "album": "FDS_Sport12_mc",
+      "readablePhotos": 14,
+      "largePhotos": 5,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "FDS_SUPPORT35_mc",
+      "readablePhotos": 37,
+      "largePhotos": 3,
+      "maximumSavedTextLength": 176
+    },
+    {
+      "album": "FDS_TALKSHOW_202415_mc",
+      "readablePhotos": 17,
+      "largePhotos": 1,
+      "maximumSavedTextLength": 191
+    },
+    {
+      "album": "FDS_TALKSHOW_2024_RECAP_TRUYN_THNG_OFFLINE18_mc",
+      "readablePhotos": 20,
+      "largePhotos": 9,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "FDS_TALKSHOW_2025_AI_Agent_-_The_Next_Level_Generation48_mc",
+      "readablePhotos": 45,
+      "largePhotos": 39,
+      "maximumSavedTextLength": 198
+    },
+    {
+      "album": "FDS_TALK_2022_Journey_To_Dataverse8_mc",
+      "readablePhotos": 10,
+      "largePhotos": 2,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "FDS_TRAINING_2024_PYTHON_FOR_EVERYONE10_mc",
+      "readablePhotos": 12,
+      "largePhotos": 1,
+      "maximumSavedTextLength": 211
+    },
+    {
+      "album": "HUMANS_OF_FDS35_mc",
+      "readablePhotos": 36,
+      "largePhotos": 9,
+      "maximumSavedTextLength": 216
+    },
+    {
+      "album": "LIVE_UPDATE_RECAP_FDS_Talk_2022134_mc",
+      "readablePhotos": 136,
+      "largePhotos": 94,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "Magical_Flourish5_mc",
+      "readablePhotos": 6,
+      "largePhotos": 2,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "nh_ba30_mc",
+      "readablePhotos": 31,
+      "largePhotos": 19,
+      "maximumSavedTextLength": 209
+    },
+    {
+      "album": "nh_i_din42_mc",
+      "readablePhotos": 44,
+      "largePhotos": 6,
+      "maximumSavedTextLength": 209
+    },
+    {
+      "album": "Photos846_items",
+      "readablePhotos": 1,
+      "largePhotos": 1,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "RECAP_FDS_RECRUITMENT_GEN_571_mc",
+      "readablePhotos": 73,
+      "largePhotos": 65,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "RECAP_FDS_TALKSHOW_2024_GENERATIVE_AI_IN_LIFE37_mc",
+      "readablePhotos": 39,
+      "largePhotos": 20,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "RECAP_Magical_Flourish-_Hnh_trnh_diu_k80_mc",
+      "readablePhotos": 82,
+      "largePhotos": 44,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "RECAP_MEMOASTRO_-_FDS_TEAM_BUILDING63_mc",
+      "readablePhotos": 65,
+      "largePhotos": 23,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "SERIES_BI_VIT_NH_K_M_BA_LA_DATA_M_RA29_mc",
+      "readablePhotos": 31,
+      "largePhotos": 4,
+      "maximumSavedTextLength": 250
+    },
+    {
+      "album": "SINBAD_-_TBD_FALL202242_mc",
+      "readablePhotos": 44,
+      "largePhotos": 2,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "Sinh_nht25_mc",
+      "readablePhotos": 16,
+      "largePhotos": 13,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "SuperNova_Explosion_-_Sinh_Nht_FDS_6_Tui80_mc",
+      "readablePhotos": 82,
+      "largePhotos": 1,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "Thnh_vin_Gen_827_mc",
+      "readablePhotos": 29,
+      "largePhotos": 27,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "Tn_Vinh_Thnh_Tch16_mc",
+      "readablePhotos": 18,
+      "largePhotos": 17,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "TROUVAILLE_-_FDS_Teambuilding80_mc",
+      "readablePhotos": 82,
+      "largePhotos": 46,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "TT_2024_GI_GHM_AN_NHIN33_mc",
+      "readablePhotos": 35,
+      "largePhotos": 17,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "TUYN_THNH_VIN_GEN_202180_mc",
+      "readablePhotos": 82,
+      "largePhotos": 24,
+      "maximumSavedTextLength": 173
+    },
+    {
+      "album": "Webinar_DATA_AI_-_BY_THE_EFFICIENT_WAY10_mc",
+      "readablePhotos": 12,
+      "largePhotos": 2,
+      "maximumSavedTextLength": 186
+    }
+  ]
+}

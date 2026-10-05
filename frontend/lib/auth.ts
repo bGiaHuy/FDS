@@ -23,7 +23,7 @@ export function getAccessToken(): string | null {
 export function getStoredUser(): AuthUser | null {
   if (typeof window === "undefined") return null;
   const raw = localStorage.getItem("user");
-  return raw ? JSON.parse(raw) : null;
+  try { return raw ? JSON.parse(raw) : null; } catch { return null; }
 }
 
 function saveAuth(data: AuthResponse) {
@@ -43,7 +43,7 @@ export async function register(
   email: string,
   password: string
 ): Promise<AuthResponse> {
-  const res = await fetch(`${API_URL}/auth/register`, {
+  const res = await fetch("/api/auth/register", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     credentials: "include",
@@ -64,7 +64,7 @@ export async function login(
   email: string,
   password: string
 ): Promise<AuthResponse> {
-  const res = await fetch(`${API_URL}/auth/login`, {
+  const res = await fetch("/api/auth/login", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     credentials: "include",
@@ -83,7 +83,7 @@ export async function login(
 
 export async function refreshAccessToken(): Promise<string | null> {
   try {
-    const res = await fetch(`${API_URL}/auth/refresh`, {
+    const res = await fetch("/api/auth/refresh", {
       method: "POST",
       credentials: "include",
     });
@@ -103,7 +103,7 @@ export async function refreshAccessToken(): Promise<string | null> {
 }
 
 export async function logout(): Promise<void> {
-  await fetch(`${API_URL}/auth/logout`, {
+  await fetch("/api/auth/logout", {
     method: "POST",
     credentials: "include",
   }).catch(() => {});
@@ -120,8 +120,9 @@ export async function authFetch(
   let token = getAccessToken();
 
   const doFetch = (t: string | null) =>
-    fetch(url.startsWith("http") ? url : `${API_URL}${url}`, {
+    fetch(url.startsWith("http") || url.startsWith("/api/") ? url : `${API_URL}${url}`, {
       ...options,
+      credentials: "include",
       headers: {
         ...options.headers,
         ...(t ? { Authorization: `Bearer ${t}` } : {}),
