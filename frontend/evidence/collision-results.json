@@ -1,143 +1,136 @@
 {
   "data": {
     "heroHand": {
-      "left": 810,
-      "top": 192,
-      "right": 1340,
-      "bottom": 671,
-      "width": 530,
-      "height": 479
+      "left": 571,
+      "top": 74,
+      "right": 1228,
+      "bottom": 739,
+      "width": 657,
+      "height": 665
     },
     "heroNote": {
-      "left": 1150,
-      "top": 523,
-      "right": 1338,
-      "bottom": 656,
-      "width": 187,
-      "height": 133
+      "left": 1101,
+      "top": 583,
+      "right": 1266,
+      "bottom": 700,
+      "width": 165,
+      "height": 117
     },
     "heroImpact": {
-      "left": 1294,
-      "top": 145,
-      "right": 1356,
-      "bottom": 223,
-      "width": 62,
-      "height": 78
+      "left": 1323,
+      "top": 239,
+      "right": 1369,
+      "bottom": 314,
+      "width": 46,
+      "height": 75
     },
     "aboutMedia": {
       "left": 946,
-      "top": 773,
+      "top": 819,
       "right": 1264,
-      "bottom": 1031,
+      "bottom": 1077,
       "width": 318,
       "height": 258
     },
     "aboutHandwriting": {
       "left": 1256,
-      "top": 755,
+      "top": 801,
       "right": 1376,
-      "bottom": 883,
+      "bottom": 930,
       "width": 120,
       "height": 129
     },
     "aboutPaperNote": {
       "left": 1204,
-      "top": 945,
+      "top": 992,
       "right": 1380,
-      "bottom": 1009,
+      "bottom": 1056,
       "width": 176,
       "height": 64
     },
-    "aboutPaperText": {
-      "left": 1212,
-      "top": 964,
-      "right": 1372,
-      "bottom": 991,
-      "width": 159,
-      "height": 28
-    },
+    "aboutPaperText": null,
     "activitiesCollage": {
       "left": 800,
-      "top": 1564,
+      "top": 1790,
       "right": 1340,
-      "bottom": 1994,
+      "bottom": 2220,
       "width": 540,
       "height": 430
     },
     "activitiesListNote": {
       "left": 1038,
-      "top": 1513,
+      "top": 1739,
       "right": 1156,
-      "bottom": 1632,
+      "bottom": 1858,
       "width": 118,
       "height": 119
     },
     "activitiesCommunityNote": {
-      "left": 778,
-      "top": 1958,
-      "right": 886,
-      "bottom": 2018,
+      "left": 779,
+      "top": 2191,
+      "right": 885,
+      "bottom": 2243,
       "width": 107,
-      "height": 59
+      "height": 52
     },
     "activitiesTogetherNote": {
       "left": 1281,
-      "top": 1859,
+      "top": 2085,
       "right": 1375,
-      "bottom": 1965,
+      "bottom": 2191,
       "width": 95,
       "height": 106
     },
     "activityFrames": [
       {
         "left": 801,
-        "top": 1591,
+        "top": 1817,
         "right": 1042,
-        "bottom": 1765,
+        "bottom": 1990,
         "width": 242,
         "height": 174
       },
       {
-        "left": 1153,
-        "top": 1600,
+        "left": 1148,
+        "top": 1826,
         "right": 1333,
-        "bottom": 1838,
-        "width": 180,
-        "height": 238
+        "bottom": 2058,
+        "width": 185,
+        "height": 232
       },
       {
-        "left": 890,
-        "top": 1799,
-        "right": 1183,
-        "bottom": 1985,
-        "width": 293,
-        "height": 186
+        "left": 879,
+        "top": 2016,
+        "right": 1188,
+        "bottom": 2210,
+        "width": 308,
+        "height": 195
       }
     ],
     "activityFrameContents": [
       {
         "left": 810,
-        "top": 1600,
+        "top": 1826,
         "right": 1033,
-        "bottom": 1745,
+        "bottom": 1971,
         "width": 223,
         "height": 145
       },
       {
-        "left": 1163,
-        "top": 1610,
-        "right": 1324,
-        "bottom": 1819,
-        "width": 161,
-        "height": 209
+        "left": 1158,
+        "top": 1835,
+        "right": 1323,
+        "bottom": 2038,
+        "width": 165,
+        "height": 203
       },
       {
-        "left": 899,
-        "top": 1808,
-        "right": 1174,
-        "bottom": 1965,
-        "width": 275,
-        "height": 158
+        "left": 889,
+        "top": 2025,
+        "right": 1178,
+        "bottom": 2191,
+        "width": 290,
+        "height": 166
       }
     ],
     "scrollWidth": 1440,
@@ -146,22 +139,13 @@
   "results": {
     "heroNoteImpactCollision": {
       "collides": false,
-      "distance": 300,
+      "distance": 274.97272592022654,
       "pass": true
     },
     "heroNoteHandSilhouette": {
-      "noteCenterX": 1243.5,
-      "handRight": 1340,
+      "noteCenterX": 1183.5,
+      "handRight": 1228,
       "isOutsideOrFlank": true,
-      "pass": true
-    },
-    "aboutHandwritingPaperTextCollision": {
-      "collides": false,
-      "distance": 81,
-      "pass": true
-    },
-    "aboutPaperTextContained": {
-      "isInside": true,
       "pass": true
     },
     "activitiesHandwritingFrameCollisions": [

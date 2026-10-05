@@ -1,0 +1,37 @@
+{
+  "summary": {
+    "heroTop": 81,
+    "heroBottom": 872,
+    "leftSpineX": 872,
+    "rightRouteStartX": 1504,
+    "routeLineScreenY": 480,
+    "handRightXAtRow": 1507,
+    "routeHandGap": -3,
+    "signatureLeft": 1515,
+    "signatureWidth": 282,
+    "signatureCssWidth": 265,
+    "headingRect": {
+      "left": 142,
+      "top": 203,
+      "right": 578,
+      "bottom": 395,
+      "width": 436,
+      "height": 191
+    },
+    "handVisible": {
+      "left": 851,
+      "right": 1577
+    },
+    "handToHexGap": -73.63022504009632,
+    "heroTextRight": 742,
+    "horizontalOverflow": 0
+  },
+  "checks": {
+    "leftSpineX_871_875": true,
+    "rightRouteStartX_1495_1510": true,
+    "routeHandGap_minus3_3": true,
+    "signatureLeft_1500_1520": true,
+    "signatureWidth_250_275": true,
+    "horizontalOverflow_0": true
+  }
+}

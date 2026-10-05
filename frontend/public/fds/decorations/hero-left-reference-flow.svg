@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 642" fill="none">
+  <g stroke="#B5C9E4" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Main rail: begins at the navbar divider. -->
+    <path d="M116 0V456H180V502H246"/>
+    <!-- Rectangular branch between the two title lines; rejoins the main rail below. -->
+    <path d="M116 246H78V456H180"/>
+    <!-- Short quiet return near the lower club-name line. -->
+    <path d="M180 502V536H218"/>
+  </g>
+  <g fill="#7EA5D6">
+    <circle cx="116" cy="246" r="3"/>
+    <circle cx="78" cy="456" r="3"/>
+    <circle cx="180" cy="456" r="3"/>
+    <circle cx="246" cy="502" r="3"/>
+  </g>
+</svg>

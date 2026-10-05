@@ -1,0 +1,72 @@
+{
+  "boundingBoxes": {
+    "hero": {
+      "width": "1536px",
+      "height": "642px"
+    },
+    "copy": {
+      "left": "115px",
+      "width": "599px"
+    },
+    "leftMainRail": {
+      "x": "785px"
+    },
+    "handImageBox": {
+      "width": "516px"
+    },
+    "handVisibleContent": {
+      "width": "461px",
+      "left": "826px",
+      "right": "1287px"
+    },
+    "rightRoute": {
+      "left": "1313px",
+      "width": "223px"
+    },
+    "impactLabel": {
+      "left": "1412px"
+    },
+    "handToHexGap": {
+      "width": "26px"
+    }
+  },
+  "overflowResults": [
+    {
+      "viewport": "1901px",
+      "docWidth": 1901,
+      "winWidth": 1901,
+      "hasOverflow": false
+    },
+    {
+      "viewport": "1536px",
+      "docWidth": 1536,
+      "winWidth": 1536,
+      "hasOverflow": false
+    },
+    {
+      "viewport": "1280px",
+      "docWidth": 1280,
+      "winWidth": 1280,
+      "hasOverflow": false
+    },
+    {
+      "viewport": "1024px",
+      "docWidth": 1024,
+      "winWidth": 1024,
+      "hasOverflow": false
+    },
+    {
+      "viewport": "768px",
+      "docWidth": 768,
+      "winWidth": 768,
+      "hasOverflow": false
+    },
+    {
+      "viewport": "375px",
+      "docWidth": 375,
+      "winWidth": 375,
+      "hasOverflow": false
+    }
+  ],
+  "consoleErrors": []
+}

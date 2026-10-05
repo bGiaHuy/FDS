@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 760" fill="none">
+  <!-- Minimal architectural frame derived from the approved Hero reference. -->
+  <g stroke="#B7CCE8" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M70 0v214h38v176H70v370"/>
+    <path d="M70 286h76v154h92"/>
+    <path d="M108 80v98h46"/>
+    <path d="M238 108h112"/>
+    <path d="M324 108v86h58"/>
+    <path d="M882 0v98h-48v172h48v214"/>
+    <path d="M834 196h-76v92h-74"/>
+    <path d="M882 484h-116v88H650"/>
+    <path d="M882 484l58 72v204"/>
+    <path d="M166 666h142"/>
+    <path d="M672 666h132"/>
+  </g>
+  <g fill="#82A8D8">
+    <circle cx="70" cy="214" r="3"/>
+    <circle cx="146" cy="286" r="3"/>
+    <circle cx="238" cy="440" r="3"/>
+    <circle cx="350" cy="108" r="3"/>
+    <circle cx="834" cy="98" r="3"/>
+    <circle cx="758" cy="288" r="3"/>
+    <circle cx="766" cy="572" r="3"/>
+  </g>
+</svg>

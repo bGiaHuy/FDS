@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 223 416" fill="none">
+  <!-- Traced from the approved right-side Hero crop. -->
+  <g stroke="#AFC6E3" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">
+    <!-- The route enters from above and crosses the navbar divider. -->
+    <path d="M85 0L55 60"/>
+
+    <!-- One full hexagon with the overlapping inner diamond visible in the reference. -->
+    <path d="M20 60H55L73 94L55 126H20L2 94Z"/>
+    <path d="M55 60L73 94L55 126L38 94Z"/>
+
+    <!-- Lower-right hex vertex feeds the diagonal into the label rail. -->
+    <path d="M55 126L89 183"/>
+
+    <!-- The rail starts above the diagonal junction, as in the reference. -->
+    <path d="M89 126V324"/>
+
+    <!-- Bottom route passes behind the hand, then turns down-right beside the signature. -->
+    <path d="M0 324H151L223 416"/>
+  </g>
+  <circle cx="55" cy="126" r="2.6" fill="#7EA5D6"/>
+</svg>

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 640" fill="none">
+  <!-- Blueprint Fine Grid -->
+  <g stroke="#80A7DA" stroke-width="1.0" stroke-dasharray="3 6" opacity="0.7">
+    <line x1="40" y1="60" x2="880" y2="60" />
+    <line x1="40" y1="160" x2="880" y2="160" />
+    <line x1="40" y1="280" x2="880" y2="280" />
+    <line x1="40" y1="400" x2="880" y2="400" />
+    <line x1="40" y1="520" x2="880" y2="520" />
+    <line x1="40" y1="600" x2="880" y2="600" />
+
+    <line x1="80" y1="30" x2="80" y2="620" />
+    <line x1="200" y1="30" x2="200" y2="620" />
+    <line x1="360" y1="30" x2="360" y2="620" />
+    <line x1="520" y1="30" x2="520" y2="620" />
+    <line x1="680" y1="30" x2="680" y2="620" />
+    <line x1="840" y1="30" x2="840" y2="620" />
+  </g>
+
+  <!-- Major Structural Frame & Axis Lines (Stroke 1.4, Color #5B8EC9) -->
+  <g stroke="#5B8EC9" stroke-width="1.4">
+    <!-- Corner Brackets comfortably inside viewBox -->
+    <path d="M40 90 V 40 H 90" />
+    <path d="M40 550 V 600 H 90" />
+    <path d="M880 600 H 830" />
+    <path d="M880 600 V 550" />
+
+    <!-- Calibration Radar Circles (Large enough to extend beyond hand illustration) -->
+    <circle cx="520" cy="320" r="280" stroke="#6F99D0" stroke-width="1.2" stroke-dasharray="5 9" opacity="0.85" />
+    <circle cx="520" cy="320" r="200" stroke="#5B8EC9" stroke-width="1.35" opacity="0.9" />
+    <circle cx="520" cy="320" r="90" stroke="#3974BD" stroke-width="1.4" stroke-dasharray="4 6" />
+    <circle cx="520" cy="320" r="14" stroke="#3974BD" stroke-width="1.5" />
+
+    <!-- Crosshair Axis with Gaps around Center -->
+    <path d="M520 40 V 210 M520 430 V 600" stroke-dasharray="8 6" />
+    <path d="M120 320 H 410 M630 320 H 880" stroke-dasharray="8 6" />
+
+    <!-- Stepped Technical Routing Lines (Prominent Left & Bottom Wings) -->
+    <path d="M60 160 H 180 V 220 H 290" />
+    <path d="M100 480 H 220 V 420 H 330" />
+    <path d="M710 520 H 790 V 460 H 860" />
+
+    <!-- Top & Bottom Precision Measurement Ticks -->
+    <path d="M260 40 H 460" />
+    <path d="M260 34 V 46 M310 37 V 43 M360 34 V 46 M410 37 V 43 M460 34 V 46" />
+
+    <path d="M580 600 H 780" />
+    <path d="M580 594 V 606 M630 597 V 603 M680 594 V 606 M730 597 V 603 M780 594 V 606" />
+  </g>
+
+  <!-- Technical Node Dots & Signal Junctions (Fill #3974BD) -->
+  <g fill="#3974BD">
+    <circle cx="180" cy="220" r="4" />
+    <circle cx="290" cy="220" r="3.5" />
+    <circle cx="220" cy="420" r="3.5" />
+    <circle cx="330" cy="420" r="4" />
+    <circle cx="710" cy="520" r="3.5" />
+    <circle cx="790" cy="460" r="4" />
+    <circle cx="520" cy="70" r="3.5" />
+    <circle cx="520" cy="570" r="3.5" />
+    <circle cx="150" cy="320" r="3.5" />
+    <circle cx="850" cy="320" r="3.5" />
+  </g>
+
+  <!-- Cross Ticks at Intersections -->
+  <g stroke="#3974BD" stroke-width="1.3">
+    <path d="M196 156 H 204 M200 152 V 160" />
+    <path d="M356 396 H 364 M360 392 V 400" />
+    <path d="M836 516 H 844 M840 512 V 520" />
+  </g>
+
+  <!-- Blueprint Monospace Annotations (Fill #3974BD, Font-weight 600) -->
+  <g fill="#3974BD" font-family="monospace" font-size="9.5" font-weight="600" letter-spacing="1.2">
+    <text x="44" y="32">SEC // 01.0 - BLUEPRINT</text>
+    <text x="44" y="618">GRID_REF [42.8N // 105.3E]</text>
+    <text x="750" y="618">SCALE 1:1.0</text>
+  </g>
+</svg>

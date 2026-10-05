@@ -139,7 +139,7 @@ export default function AuthPage() {
               <Image src="/fds/decorations/hex-network.svg" alt="" width={200} height={200} className="fds-decorative select-none w-full h-auto" draggable={false} />
             </div>
             <Link href="/" className="auth-wordmark-link" tabIndex={-1}>
-              <Image src="/fds/brand/fds-wordmark-authentic-navy.png" alt="FDS" width={154} height={84} priority className="auth-wordmark fds-decorative select-none" draggable={false} />
+              <Image src="/fds/brand/fds-wordmark-authentic-navy-tight.png" alt="FDS" width={138} height={51} priority className="auth-wordmark fds-decorative select-none" draggable={false} />
             </Link>
             <p className="fds-eyebrow mt-6 mb-3">FPTU Data Science Club</p>
             <h2 className="auth-brand-headline">Insights <em>in our eyes</em></h2>
@@ -166,7 +166,7 @@ export default function AuthPage() {
         {/* RIGHT FORM PANEL */}
         <main className="auth-form-panel">
           <Link href="/" className="auth-mobile-wordmark">
-            <Image src="/fds/brand/fds-wordmark-authentic-navy.png" alt="FDS" width={130} height={71} className="fds-decorative select-none" draggable={false} />
+            <Image src="/fds/brand/fds-wordmark-authentic-navy-tight.png" alt="FDS" width={118} height={44} className="fds-decorative select-none" draggable={false} />
           </Link>
 
           <div className="auth-card" role="main">

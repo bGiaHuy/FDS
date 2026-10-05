@@ -3,9 +3,10 @@
   "private": true,
   "version": "0.1.0",
   "scripts": {
-    "build": "nest build",
+    "build": "prisma generate && nest build",
     "start": "node dist/src/main.js",
     "start:dev": "nest start --watch",
+    "postinstall": "prisma generate",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev --name init",
     "prisma:deploy": "prisma migrate deploy",
@@ -26,6 +27,7 @@
     "passport": "^0.7.0",
     "passport-google-oauth20": "^2.0.0",
     "passport-jwt": "^4.0.1",
+    "prisma": "^5.22.0",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1"
   },
@@ -38,7 +40,6 @@
     "@types/node": "^22.10.2",
     "@types/passport-google-oauth20": "^2.0.17",
     "@types/passport-jwt": "^4.0.1",
-    "prisma": "^5.22.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.2"
   },

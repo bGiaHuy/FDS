@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 650" fill="none">
+  <!-- Quiet vertical rail: no HUD ticks, codes or dashed measurement grid. -->
+  <g stroke="#B7CCE8" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M62 0v218H34v170h28v262"/>
+    <path d="M62 116h64"/>
+    <path d="M34 304H8"/>
+    <path d="M62 494h92v86"/>
+  </g>
+  <g fill="#82A8D8">
+    <circle cx="62" cy="116" r="3"/>
+    <circle cx="34" cy="304" r="3"/>
+    <circle cx="62" cy="494" r="3"/>
+    <circle cx="154" cy="580" r="3"/>
+  </g>
+</svg>
