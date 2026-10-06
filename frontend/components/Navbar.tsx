@@ -40,6 +40,7 @@ export default function Navbar() {
         "community",
         "about",
         "journey",
+        "partners",
       ];
 
       for (const sectionId of [...sections].reverse()) {
@@ -64,7 +65,7 @@ export default function Navbar() {
     { label: "Hoạt động", href: "#activities", id: "activities" },
     { label: "Sáng kiến", href: "#projects", id: "projects" },
     { label: "Cộng đồng", href: "#community", id: "community" },
-    { label: "Đồng hành", href: "#journey", id: "journey" },
+    { label: "Đồng hành", href: "#partners", id: "partners" },
   ];
 
   const handleLinkClick = () => {

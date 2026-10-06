@@ -67,6 +67,7 @@
 .ed-rest--photo::after { content: ''; position: absolute; inset: 0; background: #06172eb8; }
 .ed-rest-copy { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; padding-block: 120px; }
 .ed-rest-copy h2,.ed-rest-copy > p { color: white; }
+.ed-rest-copy .ed-club-title { font-family: var(--font-sans); font-weight: 700; font-size: clamp(36px, 6.3vw, 90px); max-width: 1100px; line-height: 1.1; letter-spacing: -.04em; }
 .ed-rest-copy .ed-label { color: #c8ddff; }
 .ed-rest-copy .ed-scribble { --fds-blue: #8db8ff; }
 .ed-scribble { width: min(340px, 65%); height: 44px; margin: 6px 0 24px; }
@@ -90,8 +91,7 @@
 .ed-disciplines dd { margin: 0; font-size: 14px; line-height: 1.7; color: var(--ed-muted); }
 .ed-image-rest { position: relative; min-height: 65svh; }
 .ed-image-rest > .ed-photo { position: absolute; inset: 0; aspect-ratio: auto; }
-.ed-image-rest > .ed-photo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg,rgba(10,35,72,.88),rgba(10,35,72,.2)); }
-.ed-image-rest > div:last-child { position: relative; padding: 130px max(56px, calc((100vw - 1280px)/2)); }
+.ed-image-rest > div:not(.ed-photo) { position: relative; padding: 130px max(56px, calc((100vw - 1280px)/2)); }
 .ed-image-rest h2 { color: white; max-width: 800px; }
 .ed-image-rest .ed-label,.ed-half .ed-label { color: #c8ddff; }
 .ed-case { display: grid; grid-template-columns: 2fr 3fr; gap: 65px; align-items: center; }
@@ -172,6 +172,17 @@
 .ed-skip { position: fixed; top: -100px; left: 20px; z-index: 100; background: white; padding: 15px; color: #0a2348; }
 .ed-skip:focus { top: 15px; }
 .ed-hero-proof { margin-top: 30px; padding-top: 18px; border-top: 1px solid #0a234830; font-family: var(--font-mono); font-size: 10px; color: #415777; letter-spacing: .04em; }
+@keyframes fds-hero-enter {
+  from { opacity: 0; translate: 0 12px; }
+  to { opacity: 1; translate: 0 0; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #home [data-hero-copy] { animation: fds-hero-enter 650ms cubic-bezier(.22,1,.36,1) both; }
+  #home [data-hero-hand] { animation: fds-hero-enter 800ms cubic-bezier(.22,1,.36,1) 100ms both; }
+  #home [data-hero-note] { animation: fds-hero-enter 600ms cubic-bezier(.22,1,.36,1) 220ms both; }
+  .ed-home .ed-link span,.ed-members-cta span,.ed-human-peek > span:last-child { transition: translate 200ms ease; }
+  .ed-home .ed-link:hover span,.ed-members-cta:hover span,.ed-human-peek:hover > span:last-child { translate: 3px -2px; }
+}
 @media (max-width: 1100px) {
   .ed-shell { width: calc(100% - 64px); }
   .ed-section { padding-block: 80px; }
@@ -218,7 +229,7 @@
   .ed-pillar--grow .ed-photo { aspect-ratio: 5/4; }
   .ed-disciplines dl > div { grid-template-columns: 1fr; gap: 8px; }
   .ed-image-rest { min-height: 55svh; }
-  .ed-image-rest > div:last-child { padding: 100px 20px; }
+  .ed-image-rest > div:not(.ed-photo) { padding: 100px 20px; }
   .ed-case { grid-template-columns: 1fr; gap: 40px; }
   .ed-case-note { right: 0; width: 52%; }
   .ed-case-note .ed-label { font-size: 8px; }
@@ -248,4 +259,21 @@
   html { scroll-behavior: auto !important; }
   .ed-home *, .fds-page * { transition: none !important; animation: none !important; }
   .ed-human:hover img,.ed-human:focus-visible img { transform: none; }
+}
+
+.ed-partners { padding-block:48px 64px; text-align:center; }
+.ed-home .ed-partners h2 { font-family:var(--font-sans); font-size:14px; font-weight:400; line-height:1.5; letter-spacing:0; color:var(--ed-muted); margin-bottom:28px; }
+.ed-partner-list { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:36px 72px; list-style:none; margin:0; padding:0; }
+.ed-partner { display:block; color:inherit; }
+.ed-partner-logo { display:flex; align-items:center; justify-content:center; height:52px; }
+.ed-partner-logo--fpt { position:relative; width:172px; overflow:hidden; }
+.ed-partner-fpt { position:absolute; top:0; left:50%; transform:translateX(-50%); width:330px; height:93px; max-width:none; }
+.ed-partner-pdp { width:152px; height:47px; mix-blend-mode:multiply; }
+@media(max-width:480px) {
+  .ed-partner-list { column-gap:20px; }
+  .ed-partners { padding-block:36px 48px; }
+  .ed-partner-logo { height:43px; }
+  .ed-partner-logo--fpt { width:140px; }
+  .ed-partner-fpt { width:270px; height:76px; }
+  .ed-partner-pdp { width:120px; height:auto; }
 }
