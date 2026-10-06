@@ -2,6 +2,7 @@ import ReviewComments from "../components/home/ReviewComments";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 import HomepageEditorial from "../components/home/HomepageEditorial";
+import LandingMotion from "../components/home/LandingMotion";
 import "./editorial.css";
 import {
   Facebook,
@@ -16,6 +17,7 @@ export default function Home() {
       {/* 1. Header & Navigation */}
       <Navbar />
       <ReviewComments />
+      <LandingMotion />
 
 
       {/* 00 — Hero (#home) */}
@@ -244,6 +246,7 @@ export default function Home() {
                     Các ban của FDS
                   </a>
                 </li>
+                <li><a href="#partners" className="hover:text-white transition">Đơn vị đồng hành</a></li>
                 <li>
                   <a href="#journey" className="hover:text-white transition">
                     Tham gia FDS

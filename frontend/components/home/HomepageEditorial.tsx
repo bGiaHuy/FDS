@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { FlowPath, Scribble } from "./EditorialMotifs";
+import Partners from "./Partners";
+import { FlowPath } from "./EditorialMotifs";
 import { fdsPhotos, type FdsPhotoKey } from "../../lib/fds-photos";
 import { fdsProfiles } from "../../lib/fds-profiles";
 import { fdsSources } from "../../lib/fds-stories";
@@ -38,7 +39,7 @@ export default function HomepageEditorial() {
       <div id="achievements" className="ed-proof"><h3>Thành tích cá nhân được FDS vinh danh</h3><div className="ed-proof-numbers"><p><strong>03</strong><span>Thủ khoa khối ngành Kỹ thuật<br />Đợt III/2025 – II/2026</span></p><External href={fdsSources.valedictorians}>Đọc bài vinh danh của FDS</External><a className="ed-link" href="/people#alps-alpine">04 thành viên · học bổng ALPS Alpine →</a></div></div>
     </section>
 
-    <section id="ambition" className="ed-rest ed-rest--photo" aria-labelledby="ambition-title"><Photo file="club-prom-gathering" alt="Các thế hệ thành viên FDS cùng gặp gỡ trong hội trường" /><div className="ed-rest-copy ed-shell"><Label>FPTU Data Science Club</Label><h2 id="ambition-title">Học dữ liệu.<br /><em>Thực hành cùng nhau.</em></h2><Scribble /><p>Từ buổi training đầu tiên đến những lần cùng nhau đi thi.</p></div></section>
+    <section id="ambition" className="ed-rest ed-rest--photo" aria-labelledby="ambition-title"><Photo file="club-prom-gathering" alt="Các thế hệ thành viên FDS cùng gặp gỡ trong hội trường" /><div className="ed-rest-copy ed-shell"><h2 id="ambition-title" className="ed-club-title">FPTU DATA SCIENCE CLUB</h2></div></section>
 
     <section id="fields" className="ed-section ed-shell">
       <div className="ed-heading ed-heading--stack"><div><Label>02 / Hoạt động chuyên môn</Label><h2>Ở FDS,<br /><em>chúng mình làm gì?</em></h2><p>Học AI và Data Science, tham gia cuộc thi, tổ chức workshop và hướng dẫn thực hành.</p></div></div>
@@ -49,7 +50,7 @@ export default function HomepageEditorial() {
       <details className="ed-disciplines"><summary>Các lĩnh vực chuyên môn <span aria-hidden="true">+</span></summary><dl><div><dt>Data Science</dt><dd>Phân tích dữ liệu, tìm quy luật và xây dựng mô hình dự đoán.</dd></div><div><dt>Big Data</dt><dd>Lưu trữ, xử lý và phân tích lượng dữ liệu lớn.</dd></div><div><dt>Artificial Intelligence</dt><dd>Học và ứng dụng Machine Learning, Deep Learning vào bài toán thực tế.</dd></div><div><dt>Học tập & Thực hành</dt><dd>Training, workshop chuyên sâu, cuộc thi và dự án cộng đồng.</dd></div></dl></details>
     </section>
 
-    <section id="together" className="ed-image-rest" aria-labelledby="together-title"><Photo file="memoastro-team" alt="Thành viên FDS tại teambuilding Memoastro" /><div><Label>Ngoài giờ học</Label><h2 id="together-title">Cùng học.<br /><em>Cùng chơi.</em></h2></div></section>
+    <section id="together" className="ed-image-rest" aria-label="Teambuilding Memoastro"><Photo file="memoastro-team" alt="Thành viên FDS tại teambuilding Memoastro" /></section>
 
     <section id="projects" className="ed-section ed-shell">
       <Label>03 / Chương trình của FDS</Label>
@@ -66,7 +67,7 @@ export default function HomepageEditorial() {
       ["Hướng dẫn", "Chia sẻ tài liệu và hướng dẫn những thành viên mới."],
     ].map(([title, copy], index) => <li key={title}><span className="ed-label">0{index + 1}</span><h3>{title}</h3><p>{copy}</p></li>)}</ol></div></section>
 
-    <section id="half-story" className="ed-half" aria-labelledby="half-title"><Photo file="prom-conversation" alt="Thành viên trò chuyện tại FDS Prom 2026" /><Photo file="prom-portraits" alt="Thành viên chụp ảnh lưu niệm tại FDS Prom" /><div><Label>FDS Prom</Label><h2 id="half-title">Một đêm gặp gỡ.<br /><em>Nhiều thế hệ FDS.</em></h2><p>Thành viên và cựu thành viên FDS trong đêm prom.</p></div></section>
+    <section id="half-story" className="ed-half" aria-labelledby="half-title"><Photo file="prom-conversation" alt="Thành viên trò chuyện tại FDS Prom 2026" /><Photo file="prom-portraits" alt="Thành viên chụp ảnh lưu niệm tại FDS Prom" /><div><h2 id="half-title">FDS PROM 2026</h2></div></section>
 
     <section id="community" className="ed-section ed-shell"><div className="ed-heading ed-heading--stack"><div><Label>06 / Các ban của FDS</Label><h2>Mỗi ban<br /><em>một công việc.</em></h2><p>Ban Chủ nhiệm điều phối hoạt động chung. Ba ban chuyên trách cùng phụ trách chuyên môn, truyền thông và đời sống CLB.</p></div></div><div className="ed-departments"><article><Label>01 / Chuyên môn</Label><h3>Training<br />và chuyên môn.</h3><p>Nghiên cứu kiến thức, xây dựng tài liệu học tập, tổ chức workshop kỹ thuật, training nội bộ và cố vấn chuyên môn cho các đội thi.</p><Photo file="technical-seminar-practice" alt="Thành viên thực hành trên máy tính tại seminar Limitless Potential of Data Science" /><span className="ed-label">Data Science · Big Data · AI</span></article><article><Label>02 / Truyền thông – Đối ngoại</Label><h3>Truyền thông<br />và đối tác.</h3><p>Phụ trách nội dung trên các kênh của CLB và liên hệ doanh nghiệp, nhà tài trợ, đối tác.</p><Photo file="communications-photographer" alt="Thành viên chụp ảnh tại buổi truyền thông tuyển thành viên FDS Gen 7" /></article><article><Label>03 / Văn hoá</Label><h3>Sự kiện<br />và sinh hoạt CLB.</h3><p>Tổ chức FDS Prom, Club Fair và các hoạt động nội bộ để thành viên gặp gỡ, sinh hoạt cùng nhau.</p><Photo file="club-first-meeting" alt="Thành viên FDS trong buổi First Meeting tuyển thành viên Gen 7" /></article></div></section>
 
@@ -75,5 +76,6 @@ export default function HomepageEditorial() {
     <section id="journey" className="ed-section ed-shell ed-join"><Label>08 / Tham gia FDS</Label><h2>Bạn muốn<br /><em>tham gia FDS?</em></h2><p>Dành cho sinh viên Đại học FPT Hà Nội. Tuyển thường niên vào khoảng cuối tháng 12 – đầu tháng 1; theo dõi kênh chính thức để cập nhật đợt tiếp theo.</p><details><summary><span>Quy trình tham gia FDS</span><span className="ed-join-icon" aria-hidden="true">+</span></summary><ol>{[["Tìm hiểu", "Tìm hiểu hoạt động và công việc của từng ban."], ["Ứng tuyển", "Điền Google Form khi đợt tuyển thường niên mở đơn."], ["Phỏng vấn", "Trao đổi về sở thích, kinh nghiệm và ban bạn muốn tham gia."], ["Tham gia", "Làm quen với các thành viên và bắt đầu sinh hoạt tại ban."]].map(([title, copy]) => <li key={title}><h3>{title}</h3><p>{copy}</p></li>)}</ol></details><External href={facebook}>Theo dõi đợt tuyển tiếp theo</External></section>
 
     <section id="explore" className="ed-section ed-shell"><Label>09 / Xem thêm</Label><div className="ed-explore"><a href="/people"><Photo file="activity-community" alt="Cộng đồng FDS bên biểu ngữ của CLB" /><h2>Humans<br /><em>of FDS.</em> <span aria-hidden="true">↗</span></h2></a><a href="#projects"><Label>Initiatives</Label><h3>Các chương trình<br />của CLB →</h3></a><a href="#about"><Label>About</Label><h3>Câu chuyện FDS →</h3></a><a href={facebook} target="_blank" rel="noopener noreferrer"><Label>Social / Stories</Label><h3>Gặp chúng mình<br />trên Facebook ↗</h3></a></div></section>
+    <Partners />
   </div>;
 }
